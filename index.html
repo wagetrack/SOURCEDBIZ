@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOURCED.BIZ</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Inter", Arial, sans-serif;
+        background: #0f0f0f;
+        color: #ffffff;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: white;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 40px 25px 80px;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+        font-weight: 300;
+        max-width: 600px;
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 1s ease-out;
+    }
+
+    .fade-in {
+        opacity: 1 !important;
+        transform: translateY(0px) !important;
+    }
+
+    .section {
+        padding: 70px 25px;
+        max-width: 900px;
+        margin: auto;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 1s ease-out;
+    }
+
+    /* Buttons */
+    .button-container {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 14px 28px;
+        border-radius: 8px;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .telegram-btn {
+        background-color: #2AABEE; /* Telegram blue */
+    }
+
+    .contact-btn {
+        background-color: #444;
+    }
+
+    .btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 0;
+        font-size: 0.9rem;
+        color: #888;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            font-size: 2.2rem;
+        }
+        .hero h2 {
+            font-size: 1.3rem;
+        }
+        .section {
+            font-size: 1.05rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>SOURCED.BIZ</header>
+
+<div class="hero">
+    <h2 id="intro-text">Authentic designer sourcing on request — verified, trusted, and delivered with precision.</h2>
+
+    <div class="button-container">
+        #
+            https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg
+            CURRENT STOCK
+        </a>
+
+        mailto:contact@sourced.biz
+            CONTACT
+        </a>
+    </div>
+</div>
+
+<div class="section" id="section1">
+    At SOURCED.BIZ, we specialize in locating **authentic designer pieces** directly per client request.
+    Whether you’re searching for rare collections, sold‑out items, or high‑demand luxury goods, our network ensures
+    you get exactly what you’re looking for — **verified and sourced with care**.
+</div>
+
+<div class="section" id="section2">
+    Each request is handled individually. No automated listings. No risks.  
+    You tell us what you want — we source it through reliable, vetted suppliers worldwide.  
+    Quality and authenticity are always our top priorities.
+</div>
+
+<footer>
+    © 2026 SOURCED.BIZ — Sourcing Authentic Designer Goods
+</footer>
+
+<script>
+    // fade-in on scroll
+    const elements = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add("fade-in");
+        });
+    }, { threshold: 0.3 });
+
+    elements.forEach(el => observer.observe(el));
+
+    // Hero text fade-in
+    setTimeout(() => {
+        document.getElementById("intro-text").classList.add("fade-in");
+    }, 300);
+</script>
+
+</body>
+</html>
