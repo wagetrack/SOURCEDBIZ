@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOURCED.BIZ</title>
 
-<!-- Clean modern font -->
+<!-- Modern Google Font -->
 https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
 
 <style>
@@ -77,8 +77,8 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
     }
 
     .btn img {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
     }
 
     .section {
@@ -92,32 +92,46 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
         transition: 1s ease-out;
     }
 
-    /* Payment Blocks */
+    /* Payment Section */
     .payments {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 25px;
         flex-wrap: wrap;
         padding: 20px 0 70px;
     }
 
     .pay-box {
         background: #141414;
-        padding: 30px 40px;
+        padding: 25px 25px;
         border-radius: 18px;
-        min-width: 200px;
+        width: 200px;
         text-align: center;
         border: 1px solid #1f1f1f;
-        transition: 0.3s;
+        transition: 0.3s ease;
         font-size: 1.2rem;
         font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .pay-box:hover {
-        transform: translateY(-5px);
-        background: #1a1a1a;
+        transform: translateY(-6px);
+        background: #1b1b1b;
         border-color: #2AABEE;
     }
+
+    .pay-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Colors */
+    .crypto { background: linear-gradient(145deg, #1e1e1e, #262626); }
+    .paypal { background: linear-gradient(145deg, #003087, #0055A4); }
+    .stripe { background: linear-gradient(145deg, #5f2eea, #7646ff); }
 
     footer {
         text-align: center;
@@ -134,7 +148,7 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
             font-size: 1.25rem;
         }
         .pay-box {
-            min-width: 150px;
+            width: 160px;
         }
     }
 </style>
@@ -157,6 +171,7 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
 
         <!-- CONTACT -->
         https://t.me/sdwxbtc
+            https://upload.wikimedia.org/wikipedia/commons/8/8b/Email_Icon.svg
             CONTACT
         </a>
 
@@ -176,9 +191,22 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
 
 <!-- Payment Options -->
 <div class="payments">
-    <div class="pay-box">Crypto</div>
-    <div class="pay-box">PayPal</div>
-    <div class="pay-box">Stripe</div>
+
+    <div class="pay-box crypto">
+        https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=029
+        Crypto
+    </div>
+
+    <div class="pay-box paypal">
+        https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg
+        PayPal
+    </div>
+
+    <div class="pay-box stripe">
+        https://upload.wikimedia.org/wikipedia/commons/3/30/Stripe_Logo%2C_revised_2016.png
+        Stripe
+    </div>
+
 </div>
 
 <footer>
