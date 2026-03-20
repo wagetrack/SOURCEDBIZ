@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>SOURCED.BIZ</title>
 
-<!-- Modern Google Font -->
+https://fonts.googleapis.com
+https://fonts.gstatic.com
 https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
 
 <style>
@@ -14,7 +15,6 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
         font-family: "Inter", sans-serif;
         background: #0d0d0d;
         color: white;
-        overflow-x: hidden;
     }
 
     header {
@@ -27,12 +27,13 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
 
     .hero {
         text-align: center;
-        padding: 40px 25px 40px;
+        padding: 20px 25px 40px;
     }
 
     .hero h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 300;
+        line-height: 1.4;
         opacity: 0;
         transform: translateY(20px);
         transition: 1s ease-out;
@@ -45,7 +46,6 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
         transform: translateY(0px) !important;
     }
 
-    /* Buttons */
     .button-container {
         margin-top: 35px;
         display: flex;
@@ -57,10 +57,8 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
     .btn {
         padding: 14px 28px;
         border-radius: 10px;
-        border: none;
         font-size: 1rem;
         font-weight: 600;
-        cursor: pointer;
         text-decoration: none;
         color: white;
         display: flex;
@@ -68,13 +66,8 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
         gap: 10px;
     }
 
-    .telegram-btn {
-        background-color: #2AABEE;
-    }
-
-    .contact-btn {
-        background-color: #444;
-    }
+    .telegram-btn { background-color: #2AABEE; }
+    .contact-btn { background-color: #444; }
 
     .btn img {
         width: 22px;
@@ -82,7 +75,7 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
     }
 
     .section {
-        padding: 70px 25px;
+        padding: 60px 25px;
         max-width: 900px;
         margin: auto;
         font-size: 1.2rem;
@@ -92,7 +85,6 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
         transition: 1s ease-out;
     }
 
-    /* Payment Section */
     .payments {
         display: flex;
         justify-content: center;
@@ -102,54 +94,34 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
     }
 
     .pay-box {
-        background: #141414;
-        padding: 25px 25px;
+        padding: 25px 20px;
         border-radius: 18px;
-        width: 200px;
+        width: 190px;
         text-align: center;
         border: 1px solid #1f1f1f;
+        background: #161616;
         transition: 0.3s ease;
         font-size: 1.2rem;
         font-weight: 600;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
     }
 
     .pay-box:hover {
         transform: translateY(-6px);
-        background: #1b1b1b;
+        background: #202020;
         border-color: #2AABEE;
     }
 
     .pay-icon {
         width: 45px;
         height: 45px;
+        margin-bottom: 12px;
     }
-
-    /* Colors */
-    .crypto { background: linear-gradient(145deg, #1e1e1e, #262626); }
-    .paypal { background: linear-gradient(145deg, #003087, #0055A4); }
-    .stripe { background: linear-gradient(145deg, #5f2eea, #7646ff); }
 
     footer {
         text-align: center;
         padding: 40px 0 20px;
         font-size: 0.9rem;
         color: #888;
-    }
-
-    @media (max-width: 600px) {
-        header {
-            font-size: 2.3rem;
-        }
-        .hero h2 {
-            font-size: 1.25rem;
-        }
-        .pay-box {
-            width: 160px;
-        }
     }
 </style>
 </head>
@@ -162,51 +134,44 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
     <h2 id="intro-text">Authentic designer sourcing — verified suppliers, exclusive access, and trusted delivery worldwide.</h2>
 
     <div class="button-container">
-
-        <!-- CURRENT STOCK -->
         https://t.me/sourcedbiz
             https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg
             CURRENT STOCK
         </a>
 
-        <!-- CONTACT -->
         https://t.me/sdwxbtc
             https://upload.wikimedia.org/wikipedia/commons/8/8b/Email_Icon.svg
             CONTACT
         </a>
-
     </div>
 </div>
 
 <div class="section">
-    SOURCED.BIZ connects you directly to a private network of **trusted global suppliers**.
+    SOURCED.BIZ connects you directly to a private network of trusted global suppliers.
     From rare releases to sold‑out luxury pieces, every request is handled individually with full verification,
     discretion, and service built around your needs.
 </div>
 
 <div class="section">
-    No automated listings. No uncertainties.  
+    No automated listings. No uncertainties.
     Tell us what you're looking for — we source it fast and handle everything from validation to delivery.
 </div>
 
-<!-- Payment Options -->
 <div class="payments">
-
-    <div class="pay-box crypto">
+    <div class="pay-box">
         https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=029
         Crypto
     </div>
 
-    <div class="pay-box paypal">
+    <div class="pay-box">
         https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg
         PayPal
     </div>
 
-    <div class="pay-box stripe">
+    <div class="pay-box">
         https://upload.wikimedia.org/wikipedia/commons/3/30/Stripe_Logo%2C_revised_2016.png
         Stripe
     </div>
-
 </div>
 
 <footer>
@@ -214,9 +179,8 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
 </footer>
 
 <script>
-    // Fade-in for sections
+    // Fade-in observer
     const elements = document.querySelectorAll('.section');
-
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) entry.target.classList.add("fade-in");
@@ -225,10 +189,9 @@ https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap
 
     elements.forEach(el => observer.observe(el));
 
-    // Intro text fade-in
     setTimeout(() => {
         document.getElementById("intro-text").classList.add("fade-in");
-    }, 300);
+    }, 400);
 </script>
 
 </body>
